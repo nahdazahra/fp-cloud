@@ -86,7 +86,7 @@ Route::group(compact('middleware', 'prefix', 'as', 'namespace'), function () {
         'as' => 'getDelete'
     ]);
 
-    Route::get('/demo', 'DemoController@index');
+    // Route::get('/demo', 'DemoController@index');
 
     // Get file when base_directory isn't public
     $images_url = '/' . \Config::get('lfm.images_folder_name') . '/{base_path}/{image_name}';
